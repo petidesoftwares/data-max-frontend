@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-device-width: 760px){
+    [class*='col-']{
+        width: 100%;
+    }
+}
+
+/******************Page Header**************************/
+.page-header{
+    background-color: #202020;
+    color: floralwhite;
+    margin: 0px;
+    text-align: center;
+    height: 200px;
+    position: fixed;
+    z-index: 100;
+}
+
+.page-header h1{
+    font-size: 36px;
+}
+/*****************Default Nav bar with content left align*******************/
+
+.navbar-default{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #202020;
+    height: auto;
+    position: fixed;
+    top: 150px;
+    color: floralwhite;
+}
+.navbar-default li{
+    display: inline-block;
+    float: left;
+}
+
+.navbar-default li a{
+    display: block;
+    padding: 12px;
+    background-color: inherit;
+    font-size: large;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.navbar-default li a:hover:not(.active){
+    background-color: black;
+    font-weight: bold;
+}
+.navbar-default .active{
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+
+.display-pane{
+    margin-top: 200px;
+}
+
+.card{
+    border: none;
+    height: 260px;
+    padding: 0px;
+    margin: 4.166%;
+    background-color: lightgrey;
+}
+
+.card-content{
+    height: 220px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.book-title{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 2px black;
+}
+
+.card-btn-pane{
+    height: 40px;
+    padding: 10px;
+    background-color: #202020;
+}
+.card-btn-pane  button{
+    border: none;
+    outline: none;
+    color: white;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.form-pane{
+    margin-top: 2%;
+    margin-bottom:3%;
+    border: solid 1px black;
+}
+.form-pane h3{
+    margin-top: 2px;
+    text-align: center;
+}
+
+.form-pane input{
+    width: 100%;
+    font-size: 20px;
+}
+
+.form-pane span{
+    margin: 1px;
+    padding: 1px;
+}
