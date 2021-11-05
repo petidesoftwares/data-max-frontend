@@ -1,0 +1,13 @@
+{
+    "name": "dell/data-max-frontend",
+    "description": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "petidesoftwares",
+            "email": "petideenterprise@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
